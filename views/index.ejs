@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+  <script defer src="/socket.io/socket.io.js"></script>
+  <script defer src="client.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Omegle</title>
+  <style>
+    #video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 40vw);
+      grid-auto-rows: 50vh;
+      grid-gap: 25px;
+    }
+    video {
+      border: 3px solid black;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 22px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <img class = "logo" src='logo.jpg' alt="" />
+  </nav>
+  <div id="main-box">
+    <div id="mainbox" class="container1 boxright">
+    </div>
+    <div id="videobox" class="container2 boxleft">
+      <div id="video-grid"></div>
+    </div>
+  </div>
+  <div class="send right">
+    <form action="#" id="send-container">
+      <input type="text" name="messageInp" id="messageInp" placeholder="Message">
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </div>
+</body>
+</html>

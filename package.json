@@ -1,0 +1,20 @@
+{
+  "name": "videochat",
+  "version": "1.0.0",
+  "description": "A videochat application built using socket.io & peerjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm start server",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/procodervarun/VideoChat.git"
+  },
+  "author": "procodervarun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/procodervarun/VideoChat/issues"
+  },
+  "homepage": "https://github.com/procodervarun/VideoChat#readme"
+}
